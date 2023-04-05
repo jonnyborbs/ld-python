@@ -18,7 +18,7 @@ user = {
 
 @app.route("/")
 def get_feature():  
-    ldclient.set_config(Config("sdk-2a92b384-4c73-44b2-b228-c8fd4ae36603"))
+    ldclient.set_config(Config("sdk-ba6a8b5e-78ad-4950-923d-fe6356640835"))
     trek_or_wars = ldclient.get().variation("trekOrWars", user, "No Data")
     if trek_or_wars == "wars":
         r = requests.get("https://swapi.dev/api/people/1/").json()
